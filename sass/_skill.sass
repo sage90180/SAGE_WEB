@@ -1,0 +1,86 @@
+.skill
+  text-align: center
+  &__title
+    color: $color-main
+    font-size: 30px
+    margin-bottom: 30px
+  &__subtitle
+    color: $color-green
+    margin-bottom: 30px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+  &__img
+    width: calc(100%/3)
+    box-sizing: border-box
+    max-width: 260px
+    margin: 20px
+    position: relative
+    overflow: hidden
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0px
+      left: 0px
+      background-size: 100% auto
+      transition: .3s
+  &__img[data-id="1"]
+    &::after
+      background-image: url(/imgs/skill-07.png)
+    &:hover
+      &::after
+        transform: scale(1.07)
+      
+  &__img[data-id="2"]
+    &::after
+      transform: scale(1.1)
+      background-image: url(/imgs/skill-08.png)
+    &:hover
+      &::after
+        transform: translate(-6px,-6px) scale(1.1)
+
+  &__img[data-id="3"]
+    &::after
+      background-size: auto 100%
+      background-repeat: no-repeat
+      background-position: right
+      background-image: url(/imgs/test.png)
+      transform: translate(0px,0px)
+    &:hover
+      &::after
+        transform: rotate(15deg) translate(-6px,-6px)
+      
+  &__img[data-id="4"]
+    &::after
+      transform: scale(1.07)
+      background-image: url(/imgs/skill-10.png)
+    &:hover
+      &::after
+        transform: rotate(-15deg)
+
+  &__img[data-id="5"]
+    &::after
+      background-image: url(/imgs/skill-11.png)
+    &:hover
+      &::after
+        transform: scale(1.1) translate(0px,10px)
+  &__img[data-id="6"]
+    &::after
+      background-image: url(/imgs/skill-12.png)
+    &:hover
+      &::after
+        transform: rotate(-10deg)
+
+
+
+@media (max-width: 375px)
+  .skill
+    img
+      width: calc(100%/2)
+    &__img
+      width: 150px
+      margin: 20px 10px

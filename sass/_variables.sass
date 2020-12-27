@@ -1,0 +1,49 @@
+body,html
+  scroll-behavior: smooth
+  a:hover
+    text-decoration: none
+  
+  
+$color-main: #537174
+$color-green: #4d91a3
+$color-gray: #555
+
+@mixin line
+  font-size: 10px
+  font-weight: 900
+  letter-spacing: 
+  color: $color-green
+  transform: scale(1,.7)
+  margin: 15px 0px
+  position: relative
+
+@mixin icon
+  font-size: 30px
+  color: $color-gray
+  transition: .3s
+  margin: 10px 0px
+  &:hover
+    color: $color-main
+
+@mixin rectangle-btn
+  color: white
+  background: transparent linear-gradient(90deg, #1380C0 0%, #59B5A6 100%) 0% 0% no-repeat padding-box
+  padding: 7px
+  border-radius: 30px
+  display: block
+  margin: 10px 0px
+  width: 150px
+  text-align: center
+  font-size: 18px
+  box-shadow: 0px 0px 10px rgba(black ,.1 )
+  i
+    transition: .3s
+  &:hover
+    color: white
+    i
+      transform: translateX(10px)
+
+
+  
+
+  

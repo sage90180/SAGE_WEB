@@ -1,0 +1,192 @@
+.work
+  margin-top: 100px
+  &__title
+    color: $color-main
+    font-size: 30px
+    &-wrap
+      text-align: center
+      margin-bottom: 40px
+  &__types
+    color: $color-green
+    list-style: none
+    margin: 10px 0px
+    padding: 0px
+    font-size: 18px
+  &__type
+    display: inline-block
+    margin: 0px 10px 10px 10px
+    letter-spacing: 1px
+    padding: 3px 15px
+    font-weight: 500
+    &:hover
+      background: transparent linear-gradient(42deg, #e8f7ef59 0%, #ffffff75 100%) 0% 0%
+      box-shadow: 0px 0px 10px rgba(black,.08 )
+      border-radius: 30px
+      cursor: pointer
+  &__area
+    background: white
+    box-shadow: 0px 0px 10px rgba(#004e4e, .2)
+    &:hover
+      .work__thumbnail-img
+        transform: scale(1.05)
+
+  // 上頡金屬
+  &__thumbnail[data-id="1"]    
+    background: transparent linear-gradient(90deg, #9e3527 0%, #b61a2c 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #ffdbdb 0%, #FFFFFF 100%) 0% 0%
+      color: #d8051e
+      &:hover
+        color: #d8051e
+
+  // 服飾網站
+  &__thumbnail[data-id="2"]    
+    background: transparent linear-gradient(90deg, #220000 0%, #8d0000 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #ebebeb 0%, #FFFFFF 100%) 0% 0%
+      color: #8d0000
+      &:hover
+        color: #8d0000
+
+  // 茶葉
+  &__thumbnail[data-id="3"]    
+    background: transparent linear-gradient(90deg, #29a019 0%, #6fd663 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #ebebeb 0%, #FFFFFF 100%) 0% 0%
+      color: #29a019
+      &:hover
+        color: #29a019
+  
+  // 成大人體研究倫理審查委員會
+  &__thumbnail[data-id="4"]    
+    background: transparent linear-gradient(90deg, #6e6e6e 0%, #cacaca 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #e0e0e0 0%, #FFFFFF 100%) 0% 0%
+      color: #6e6e6e
+      &:hover
+        color: #6e6e6e
+
+  // 成興社
+  &__thumbnail[data-id="5"]    
+    background: transparent linear-gradient(90deg, #502c2c 0%, #722727 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #e0e0e0 0%, #FFFFFF 100%) 0% 0%
+      color: #502c2c
+      &:hover
+        color: #502c2c
+
+  // 健保無限+
+  &__thumbnail[data-id="6"]    
+    background: transparent linear-gradient(90deg, #5894cc 0%, #7ed0ff 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #e0e0e0 0%, #FFFFFF 100%) 0% 0%
+      color: #5894cc
+      &:hover
+        color: #5894cc
+
+  // 甜點
+  &__thumbnail[data-id="7"]    
+    background: transparent linear-gradient(90deg, #ff823a 0%, #ffa962 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #e0e0e0 0%, #FFFFFF 100%) 0% 0%
+      color: #ff823a
+      &:hover
+        color: #ff823a
+  
+  //數字學院
+  &__thumbnail[data-id="8"]    
+    background: transparent linear-gradient(90deg, #4aa7ad 0%, #74c8ce 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #e0e0e0 0%, #FFFFFF 100%) 0% 0%
+      color: #4aa7ad
+      &:hover
+        color: #4aa7ad
+
+  // 億嘉國際
+  &__thumbnail[data-id="9"]   
+    align-items: center 
+    background: transparent linear-gradient(90deg, #001147 0%, #1e4d83 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #cae5ff 0%, #FFFFFF 100%) 0% 0%
+      color: #001147
+      &:hover
+        color: #001147
+  // Banner
+  &__thumbnail[data-id="10"] 
+    align-items: center 
+    background: transparent linear-gradient(90deg, #2977ac 0%, #63b8fd 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #cae5ff 0%, #FFFFFF 100%) 0% 0%
+      color: #2977ac
+      &:hover
+        color: #2977ac
+  // twitch
+  &__thumbnail[data-id="11"] 
+    background: transparent linear-gradient(90deg, #284c81 0%, #87a2c7 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #cae3ff 0%, #FFFFFF 100%) 0% 0%
+      color: #284c81
+      &:hover
+        color: #284c81
+  // 吃吃燒烤
+  &__thumbnail[data-id="12"] 
+    background: transparent linear-gradient(90deg, #530d00 0%, #831f00 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #fff0e0 0%, #FFFFFF 100%) 0% 0%
+      color: #530d00
+      &:hover
+        color: #530d00
+  &__thumbnail
+    position: relative
+    display: flex
+    justify-content: space-around
+    padding: 15px 10px
+    max-height: 150px
+    min-height: 150px
+    &-img
+      display: inline-block
+      box-shadow: 0px 0px 10px rgba(black, .3)
+      width: 130px
+      height: 100%
+      max-height: 150px
+      overflow: hidden
+      transition: .3s
+      background: white
+      img
+        width: 100%
+        height: auto
+    &-info
+      display: inline-block
+      top: 0px
+      max-width: 140px
+      padding-left: 10px
+      color: white
+      h5
+        font-size: 18px
+      ul
+        padding-left: 0px
+        list-style: none
+        li
+          font-size: 15px
+          left: -3px
+    &-btn
+      +rectangle-btn
+      font-size: 14px
+      width: 110px
+      padding: 5px
+  &__text
+    padding: 30px 15px 15px 15px
+    color: $color-gray
+    font-size: 15px
+    .fa-github
+      font-size: 22px
+      color: $color-green
+  
+
+.active-btn
+  background: transparent linear-gradient(42deg, #e8f7ef59 0%, #ffffff75 100%) 0% 0%
+  box-shadow: 0px 0px 10px rgba(black,.08 )
+  border-radius: 30px
+
+.hidden
+  display: none

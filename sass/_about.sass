@@ -1,0 +1,42 @@
+.about
+  background-image: url(/imgs/about_down.svg)
+  background-size: 100% auto
+  background-position: bottom
+  background-repeat: no-repeat
+  padding: 50px 10px
+  min-height: 600px
+  &-info
+    max-width: 550px
+    .line
+      +line
+    .icon
+      +icon
+    &__title
+      font-size: 30px
+      color: $color-main
+    &__subtitle
+      font-size: 20px
+      color: $color-green
+      margin: 10px 0px
+    &__text
+      color: $color-gray
+      line-height: 25px
+    &-btn
+      +rectangle-btn
+
+
+@media (max-width: 576px)
+  .about
+    padding: 30px 10px
+    &-wrap
+      flex-direction: column-reverse
+    .ufo
+      max-width: 200px
+      float: right
+    &-info
+      position: relative
+      top: -60px
+
+
+
+      

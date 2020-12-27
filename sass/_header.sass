@@ -1,0 +1,78 @@
+.header
+  position: relative
+  padding: 30px 0px
+  background: transparent linear-gradient(180deg, #69b9e7 0%, #84DBCD 47%, #F8F5B9 100%) 0% 0% no-repeat padding-box
+  &::after
+    position: absolute
+    left: 0px
+    width: 100%
+    bottom: -1px
+    background-image: url(/imgs/gear.svg)
+    background-size: auto 15px
+    height: 15px
+    content: ''
+  .nav
+    list-style: none
+    display: flex
+    justify-content: flex-end
+    color: white
+    &-list
+      margin: 0px 10px
+      font-size: 16px
+      padding: 5px 10px
+      position: relative
+      cursor: pointer
+      color: white
+      &::after
+        content: ''
+        height: 3px
+        position: absolute
+        width: 100%
+        background: #3d879e
+        bottom: 0px
+        left: 50%
+        transform: translateX(-50%)
+        width: 0px
+        transition: .3s
+      &:hover
+        &::after
+          width: 100%
+    &-list.active
+      &::after
+        width: 100%
+
+  .banner
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &__title
+      font-weight: 900
+      font-size: 55px
+      line-height: 60px
+      text-shadow: 3px 3px 0px rgba(#164c50,.4 )
+      &-wrap
+        color: white
+        max-width: 400px
+    &__subtitle
+      margin-top: 20px
+      font-size: 26px
+      line-height: 35px
+      text-shadow: 1px 1px 0px rgba(#164c50,.4 )
+    img
+      max-width: 500px
+      width: 100%
+
+@media (max-width: 768px)
+  .banner
+    flex-direction: column
+    &__title
+      font-size: 30px !important
+      line-height: 40px !important
+      &-wrap
+        flex-direction: column
+        padding: 0px 20px
+        position: relative
+        bottom: -30px
+    &__subtitle
+      margin-top: 0px !important
+      font-size: 20px !important
