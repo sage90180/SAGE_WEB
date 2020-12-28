@@ -18,7 +18,7 @@ body a:hover, html a:hover {
   left: 0px;
   width: 100%;
   bottom: -1px;
-  background-image: url(/imgs/gear.svg);
+  background-image: url(../imgs/gear.svg);
   background-size: auto 15px;
   height: 15px;
   content: '';
@@ -128,13 +128,36 @@ body a:hover, html a:hover {
   }
 }
 
+@media (max-width: 400px) {
+  .nav {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    bottom: 20px;
+    z-index: 999;
+    left: 50%;
+    width: 320px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 5px 0px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .nav-list {
+    color: #4d91a3 !important;
+  }
+}
+
 .about {
-  background-image: url(/imgs/about_down.svg);
+  background-image: url(../imgs/about_down.svg);
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 50px 10px;
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .about-info {
@@ -278,7 +301,7 @@ body a:hover, html a:hover {
 }
 
 .skill__img[data-id="1"]::after {
-  background-image: url(/imgs/skill-07.png);
+  background-image: url(../imgs/skill-07.png);
 }
 
 .skill__img[data-id="1"]:hover::after {
@@ -289,7 +312,7 @@ body a:hover, html a:hover {
 .skill__img[data-id="2"]::after {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-image: url(/imgs/skill-08.png);
+  background-image: url(../imgs/skill-08.png);
 }
 
 .skill__img[data-id="2"]:hover::after {
@@ -301,7 +324,7 @@ body a:hover, html a:hover {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: right;
-  background-image: url(/imgs/test.png);
+  background-image: url(../imgs/test.png);
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
 }
@@ -314,7 +337,7 @@ body a:hover, html a:hover {
 .skill__img[data-id="4"]::after {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
-  background-image: url(/imgs/skill-10.png);
+  background-image: url(../imgs/skill-10.png);
 }
 
 .skill__img[data-id="4"]:hover::after {
@@ -323,7 +346,7 @@ body a:hover, html a:hover {
 }
 
 .skill__img[data-id="5"]::after {
-  background-image: url(/imgs/skill-11.png);
+  background-image: url(../imgs/skill-11.png);
 }
 
 .skill__img[data-id="5"]:hover::after {
@@ -332,7 +355,7 @@ body a:hover, html a:hover {
 }
 
 .skill__img[data-id="6"]::after {
-  background-image: url(/imgs/skill-12.png);
+  background-image: url(../imgs/skill-12.png);
 }
 
 .skill__img[data-id="6"]:hover::after {
@@ -843,6 +866,37 @@ body a:hover, html a:hover {
 
 .work__thumbnail[data-id="12"] .work__thumbnail-btn:hover {
   color: #530d00;
+}
+
+.work__thumbnail[data-id="13"] {
+  background: transparent -webkit-gradient(linear, left top, right top, from(#ee7f00), to(#ffab5c)) 0% 0%;
+  background: transparent linear-gradient(90deg, #ee7f00 0%, #ffab5c 100%) 0% 0%;
+}
+
+.work__thumbnail[data-id="13"] .work__thumbnail-btn {
+  background: transparent linear-gradient(42deg, #fff0e0 0%, #FFFFFF 100%) 0% 0%;
+  color: #ee7f00;
+}
+
+.work__thumbnail[data-id="13"] .work__thumbnail-btn:hover {
+  color: #ee7f00;
+}
+
+.work__thumbnail[data-id="14"] {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#001f47), to(#004177)) 0% 0%;
+  background: transparent linear-gradient(90deg, #001f47 0%, #004177 100%) 0% 0%;
+}
+
+.work__thumbnail[data-id="14"] .work__thumbnail-btn {
+  background: transparent linear-gradient(42deg, #e0ecff 0%, #FFFFFF 100%) 0% 0%;
+  color: #004177;
+}
+
+.work__thumbnail[data-id="14"] .work__thumbnail-btn:hover {
+  color: #004177;
 }
 
 .work__thumbnail {
