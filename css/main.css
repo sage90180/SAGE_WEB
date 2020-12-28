@@ -684,6 +684,7 @@ body a:hover, html a:hover {
 }
 
 .work__area {
+  height: 100%;
   background: white;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 78, 78, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 78, 78, 0.2);
@@ -899,6 +900,23 @@ body a:hover, html a:hover {
   color: #004177;
 }
 
+.work__thumbnail[data-id="15"] {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#00397a), to(#005092)) 0% 0%;
+  background: transparent linear-gradient(90deg, #00397a 0%, #005092 100%) 0% 0%;
+}
+
+.work__thumbnail[data-id="15"] .work__thumbnail-btn {
+  background: transparent linear-gradient(42deg, #e0ecff 0%, #FFFFFF 100%) 0% 0%;
+  color: #004177;
+}
+
+.work__thumbnail[data-id="15"] .work__thumbnail-btn:hover {
+  color: #004177;
+}
+
 .work__thumbnail {
   position: relative;
   display: -webkit-box;
@@ -947,7 +965,7 @@ body a:hover, html a:hover {
 }
 
 .work__thumbnail-info ul li {
-  font-size: 15px;
+  font-size: 14px;
   left: -3px;
 }
 
