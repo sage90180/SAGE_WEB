@@ -163,6 +163,16 @@
       color: #004177
       &:hover
         color: #004177
+  // 作品集
+  &__thumbnail[data-id="16"] 
+    align-items: center 
+    background: transparent linear-gradient(90deg, #ffb223 0%, #ffc861 100%) 0% 0%
+    .work__thumbnail-btn
+      background: transparent linear-gradient(42deg, #fff8e0 0%, #FFFFFF 100%) 0% 0%
+      color: #dd9000
+      &:hover
+        color: #dd9000
+
   &__thumbnail
     position: relative
     display: flex
@@ -205,6 +215,10 @@
     padding: 30px 15px 15px 15px
     color: $color-gray
     font-size: 15px
+    span
+      font-size: 18px
+      font-weight: 900
+      margin-left: 5px
     .fa-github
       font-size: 22px
       color: $color-green

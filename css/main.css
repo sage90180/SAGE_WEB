@@ -917,6 +917,23 @@ body a:hover, html a:hover {
   color: #004177;
 }
 
+.work__thumbnail[data-id="16"] {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#ffb223), to(#ffc861)) 0% 0%;
+  background: transparent linear-gradient(90deg, #ffb223 0%, #ffc861 100%) 0% 0%;
+}
+
+.work__thumbnail[data-id="16"] .work__thumbnail-btn {
+  background: transparent linear-gradient(42deg, #fff8e0 0%, #FFFFFF 100%) 0% 0%;
+  color: #dd9000;
+}
+
+.work__thumbnail[data-id="16"] .work__thumbnail-btn:hover {
+  color: #dd9000;
+}
+
 .work__thumbnail {
   position: relative;
   display: -webkit-box;
@@ -1005,6 +1022,12 @@ body a:hover, html a:hover {
   padding: 30px 15px 15px 15px;
   color: #555;
   font-size: 15px;
+}
+
+.work__text span {
+  font-size: 18px;
+  font-weight: 900;
+  margin-left: 5px;
 }
 
 .work__text .fa-github {
