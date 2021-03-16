@@ -1045,4 +1045,59 @@ body a:hover, html a:hover {
 .hidden {
   display: none;
 }
+
+.footer {
+  text-align: center;
+  background: #58BBAE;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  font-size: 30px;
+  color: #076d60;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footer a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .go-top {
+  font-size: 50px;
+  color: #B1DDC9;
+  text-shadow: 0px 0px 15px rgba(7, 109, 96, 0.5);
+  -webkit-animation: 2s gotop infinite;
+          animation: 2s gotop infinite;
+}
+
+@-webkit-keyframes gotop {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  30% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes gotop {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  30% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 /*# sourceMappingURL=main.css.map */
